@@ -1,17 +1,18 @@
 # Find-upcoming-elections
 
 The goal is to: 
-  Create the missing /search route
-  Ingest the incoming form parameters
-  Derive a basic set of OCD-IDs from the address (see below for further explanation)
-  Retrieve upcoming elections from the Democracy Works election API using those OCD-IDs
-  Display any matching elections to the user
+  Create the missing /search route.
+  Ingest the incoming form parameters.
+  Derive a basic set of OCD-IDs from the address.
+  Retrieve upcoming elections from the Democracy Works election API using those OCD-IDs.
+  Display any matching elections to the user.
  
 Depending on the time of year and whether it's an odd or even-numbered year,  the number of elections in the system can vary wildly. 
 Below is an up-to-date list of OCD-IDs that should return an election until the dates they are listed under.
 https://github.com/democracyworks/dw-code-exercise-lein-template/wiki/Current-elections
 
 All about OCD-IDs:
+http://opencivicdata.readthedocs.io/en/latest/data/datatypes.html
 OCD-IDs are Open Civic Data division identifiers. A given address can be broken down into several OCD-IDs. 
 For example, an address in Birmingham, Alabama would be associated with the following OCD-IDs:
 ocd-division/country:us
